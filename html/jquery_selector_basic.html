@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+		$(function() {
+			// 태그 선택자
+			const list1 = $("li");
+			//console.log(list1);
+			
+			// 아이디 선택자
+			const menu2 = $("#menu2");
+			//console.log(menu2);
+			
+			// 클래스 선택자
+			const menus = $(".menu");
+			//console.log(menus);
+			
+			// 그룹 선택자
+			const menu23 = $("#menu2, #menu3");
+			//console.log(menu23);
+			
+			// 종속 선택자
+			
+		});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li class='menu'>메뉴1</li>
+			<li id='menu2' class='menu'>메뉴2</li>
+			<li id='menu3' class='menu'>메뉴3</li>
+			<li class='menu'>메뉴4</li>
+			<li class='menu'>메뉴5</li>
+		</ul>
+	</body>
+</html>
