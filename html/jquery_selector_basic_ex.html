@@ -2,6 +2,16 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+		$(function() {
+			$main = $(".start").closest(".main");
+			$main.find(".text1").css("color", "blue");
+			$main.find(".text2").css("border", "1px solid red");
+			$main.find(".text3").css("background", "orange");
+			$main.find(".text4").css("background", "blue");
+		});
+		</script>
 	</head>
 	<body>
 		<ul class='main'>
