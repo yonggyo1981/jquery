@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+		$(function() {
+			// 속성 추가 
+			$("#memNm").attr("price", 10000);
+			
+			const price = $("#memNm").attr("price");
+			console.log(price);
+		});
+		</script>
+	</head>
+	<body>
+		<input type='text' name='memNm' id='memNm'>
+	</body>
+</html>
