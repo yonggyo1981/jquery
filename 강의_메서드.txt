@@ -1,0 +1,20 @@
+배열을 처리하는 메서드
+	$.each -> 반복 순회 (Array.forEach)
+		$("요소").each(function() {
+			$(this) ==> 반복 순회한 요소
+		});
+		
+		$.each("선택한 요소", function() {
+			$(this) ==> 반복 순회한 요소
+		});
+		
+	
+	$.map(배열객체, function() { --> Array.prototype.map -> 별도 연산 한 데이터를 새로운 배열로 반환
+	
+	})
+	
+	$.grep(데이터, 배열객체) --> Array.prototype.filter  --> 테스트한 요소가 통과된 것만 새로운 배열 반환
+	
+	
+	
+	
