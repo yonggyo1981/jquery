@@ -19,6 +19,14 @@ const goodsForm = {
 		this.num++; // 상품 추가하면 num는 1씩 증가 
 	},
 	/**
+	* 옵션 추가 
+	*
+	*/
+	addOpt : function(el) {
+		const html = $("#goods_opt_form").html();
+		el.closest(".opts").find("tbody").append(html);
+	},
+	/**
 	* 상품 삭제
 	*
 	*/
@@ -63,7 +71,7 @@ $(function() {
 	});
 	*/
 	$("body").on("click", ".add_opt", function() {
-		alert("추가!");
+		goodsForm.addOpt($(this));
 	});
 	
 	
