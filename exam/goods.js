@@ -14,7 +14,12 @@ const goodsForm = {
 		
 		html = html.replace(/<%=no%>/g, this.num);
 		
+
 		$("#frm").append(html);
+		
+		// 옵션 1개 추가
+		const add_opt = $("#frm .goods").last().find(".add_opt");
+		this.addOpt(add_opt);
 		
 		this.num++; // 상품 추가하면 num는 1씩 증가 
 	},
