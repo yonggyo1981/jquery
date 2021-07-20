@@ -25,6 +25,13 @@ const goodsForm = {
 	delete : function(el) {
 		el.closest(".goods").remove();
 	},
+	/**
+	* 옵션 삭제 
+	*
+	*/
+	deleteOpt : function(el) {
+		el.closest("tr").remove();
+	}
 };
 
 
@@ -47,5 +54,26 @@ $(function() {
 	*/
 	$("body").on("click", ".del", function() {
 		goodsForm.delete($(this));
+	});
+	
+	/** 옵션 추가 */
+	/*
+	$(".add_opt").click(function() {
+		alert("추가!");
+	});
+	*/
+	$("body").on("click", ".add_opt", function() {
+		alert("추가!");
+	});
+	
+	
+	/** 옵션 삭제 */
+	/*
+	$(".del_opt").click(function() {
+		alert("삭제!")
+	});
+	*/
+	$("body").on("click", ".del_opt", function() {
+		goodsForm.deleteOpt($(this));
 	});
 });
