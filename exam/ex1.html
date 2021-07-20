@@ -9,14 +9,14 @@
 	<body>
 		<h1>상품 등록</h1>
 		
-		<button id='add'>상품 추가</button>
+		<button type="button" id='add'>상품 추가</button>
 		<form id='frm' method='post' action=''></form>
 		
 		<script type="text/html" id="goods_form">
 			<div class='goods'>
 				<dl>
 					<dt>상품번호</dt>
-					<dd>1</dd>
+					<dd><%=no%></dd>
 				</dl>
 				<dl>
 					<dt>상품명</dt>
@@ -37,12 +37,45 @@
 					</dd>
 				</dl>
 				<dl>
+					<dt>옵션</dt>
+					<dd>
+						<table class='opts'>
+							<thead>
+								<tr>
+									<th>옵션명</th>
+									<th>옵션판매가</th>
+									<th>옵션코드</th>
+									<th>
+										<button type='button' class='add_opt'>옵션 추가</button>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="text" name="optNm">
+									</td>
+									<td>
+										<input type="text" name="optPrice">
+									</td>
+									<td>
+										<input type="text" name="optCd">
+									</td>
+									<td>
+										<button class="del_opt">옵션삭제</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+				<dl>
 					<dt>상품설명</dt>
 					<dd>
 						<textarea name='description'></textarea>
 					</dd>
 				</dl>
-				<button class='del'>상품 삭제</button>
+				<button type="button" class='del'>상품 삭제</button>
 			</div>
 		</script>
 	</body>
