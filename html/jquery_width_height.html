@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<style>
+			.box {
+				width: 200px;
+				height: 200px;
+				padding: 50px;
+				border: 5px solid #000000;
+			}
+		</style>
+		<script>
+		$(function() {
+			const box = $(".box");
+			console.log("width, height", box.width(), box.height());
+			console.log("innerWidth, innerHeight", box.innerWidth(), box.innerHeight());
+			console.log("outerWidth, outerHeight", box.outerWidth(), box.outerHeight());
+		});
+		</script>
+	</head>
+	<body>
+		<div class='box'></div>
+		<div class='box box2'></div>
+	</body>
+</html>

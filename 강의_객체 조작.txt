@@ -43,3 +43,36 @@
 			
 			속성 삭제
 				.removeAttr("속성명");
+				
+			상태 관련 속성(읽거나,  변경, 추가)
+				.prop("속성명", "값") -> 상태
+												체크가 된 상태, 선택이 된 상태
+												(값 - 논리값 - true, false)
+				
+				.prop("속성명") -> 속성의 상태 확인(true, false)
+				
+				
+			data-속성명
+				.data("속성명", "값") - 속성 추가, 변경 (보류)
+				
+				.data("속성명")  - 속성 값 조회 
+					
+					
+				<input type="number" min=100 max=200  step=2 data-min=100 data-max=200 data-step=2>
+				
+		.value -> 자주 사용하는 속성(attr로 접근 외에 별도 메서드)
+			-> .val()
+			-> .val(값)
+			
+		.addClass("클래스명") - 클래스 추가   -- classList.add()
+		.removeClass("클래스명") - 클래스 제거 -- classList.remove()
+		.toggleClass("클래스명") - 클래스가 있으면 제거, 없으면 추가  -- classList.toggle()
+		.hasClass("클래스명") - 클래스가 존재 하는지 여부 -- classList.contains()
+		
+		
+		.css() -> CSS 스타일 적용(style 속성에 추가)
+		.css("속성명", "값"); 
+		.css({
+			속성명 : "값",
+			속성명 : "값",
+		});
