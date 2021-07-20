@@ -29,15 +29,16 @@
 			
 			document.querySelector(".box1").addEventListener("click", function() {
 				alert("Box1");
-			});
+			}, false);
 			
 			document.querySelector(".box2").addEventListener("click", function() {
 				alert("Box2");
-			});
+			}, false);
 			
-			document.querySelector(".box3").addEventListener("click", function() {
+			document.querySelector(".box3").addEventListener("click", function(event) {
+				event.stopPropagation(); // 이벤트 전파 차단
 				alert("Box3");
-			});
+			}, false);
 		});
 		</script>
 	</head>
