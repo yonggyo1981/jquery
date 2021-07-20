@@ -53,10 +53,11 @@
 				
 				
 			data-속성명
-				.data("속성명", "값") - 속성 추가, 변경 (보류)
+				.data("속성명", "값") - 속성 추가, 변경
 				
 				.data("속성명")  - 속성 값 조회 
 					
+				.removeData("속성명") - 속성 제거
 					
 				<input type="number" min=100 max=200  step=2 data-min=100 data-max=200 data-step=2>
 				

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+		$(function() {
+			// ul 태그 하위의 HTML을 추출 
+			// document 객체의 innerHTML 동일
+			//const html = $("ul").html();
+			//console.log(html);
+			
+			// ul 태그 하위에 HTML 대체
+			//$("ul").html("<h1>대체된 HTML</h1>");
+			
+			// append 
+			$("ul").append("<li>메뉴6</li>");
+			
+			// prepend
+			$("ul").prepend("<li>메뉴0</li>");
+		});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>메뉴1</li>
+			<li>메뉴2</li>
+			<li id='menu3'>메뉴3</li>
+			<li>메뉴4</li>
+			<li>메뉴5</li>
+		</ul>
+	</body>
+</html>
