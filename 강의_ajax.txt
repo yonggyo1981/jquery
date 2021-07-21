@@ -1,0 +1,18 @@
+Ajax 
+	- 다른 페이지에 있는 웹페이지, 데이터 조회 -> 링크 이동 -> 페이지가 갱신
+	- 페이지 새로고침 없이 웹페이지를 교체, 데이터를 조회
+	
+	$.ajax(설정)
+	
+	$.ajax({
+		url : "데이터를 가져올 URL", 
+		type : "전송 방식 - GET, POST",
+		data : "전송할 데이터 - 객체, URL 쿼리스트링", 
+		dataType : "응답 받을 데이터 형식 - html, json, text", 
+		success : function(response) { // 응답이 성공적으로 이뤄졌을 때 호출
+							// response - 응답받은 데이터 - dataType에서 정의한 형식으로 응답
+		},
+		error : function(err) { // 응답이 실패한 경우 호출 되는 메서드
+		
+		}
+	});
